@@ -1,0 +1,850 @@
+
+/* Max-Width : 1440px */
+@media (max-width: 1440px) {
+
+    .skill-box img {
+        width: 80px;
+    }
+
+    .skill-box h3,
+    .skill-box div {
+        font-size: 20px;
+    }
+    
+}
+
+
+/* Max-Width : 1024px */
+@media (max-width: 1024px) {
+    
+    .hero-right img {
+        width: 400px;
+    }
+
+    .about-me {
+        padding: 40px 20px;
+        height: 850px;
+    }
+
+    .work-boxes {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .work-box {
+        width: 380px;
+        height: 180px;
+    }
+
+    .education {
+        height: 800px;
+    }
+
+    /* Graduation Section */
+    .graduation-section .img-text {
+        width: 60%;
+        justify-content: space-evenly;
+        /* gap: 40px; */
+    }
+
+    .skill-box img {
+        width: 120px;
+    }
+
+    .skill-box h3,
+    .skill-box div {
+        font-size: 25px;
+    }
+
+}
+
+/* Max-Width : 900px */
+@media (max-width: 900px) {
+
+    .hero-section {
+        margin-top: 90px;
+    }
+
+    .hero-right img {
+        width: 400px;
+    }
+
+    /* .about-me {
+        height: 1460px;
+    } */
+
+    .work-box {
+        width: 280px;
+        height: 140px;
+    }
+
+    .work-box-text h3 {
+        font-size: 20px;
+    }
+
+    .work-box-text p {
+        font-size: 13px;
+    }
+
+    .skill-box img {
+        width: 100px;
+    }
+
+    .skill-box h3,
+    .skill-box div {
+        font-size: 20px;
+    }
+
+}
+
+/* Max-Width : 768px */
+@media (max-width: 768px) {
+
+    .hero-section {
+        height: 350px;
+    }
+
+    .hero-left h3 {
+        font-size: 25px;
+    }
+
+    .hero-left h1 {
+        font-size: 35px;
+    }
+    
+    .hero-left h4 {
+        font-size: 28px;
+    }
+
+    #element {
+        font-size: 28px;
+        color: #FDCA65;
+    }
+
+    .hero-right img {
+        width: 300px;
+    }
+
+    /* About Me */
+
+    .about-me {
+        height: 720px;
+    }
+
+    .about-me-content h3 {
+        font-size: 25px;
+    }
+
+    .about-me-content p {
+        padding-right: 0px;
+        font-size: 0.8rem;
+    }
+
+    /* Work */
+
+    .work h3 {
+        font-size: 25px;
+    }
+
+    .work-boxes {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .work-box {
+        width: 300px;
+        height: 120px;
+        background: #212123;
+        border-radius: 25px;
+        padding: 0px 20px;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .work-box img {
+        width: 30px;
+    }
+
+    .work-box-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .work-box-text p {
+        font-size: 0.8rem;
+    }
+
+    /* Education */
+
+    .education {
+        height: 700px;
+    }
+
+    .board-section {
+        width: 100%;
+    }
+
+    .img-text {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .education h3 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .img-text h3 {
+        font-size: 18px;
+    }
+
+    .board-section h4 {
+        font-size: 14px;
+        font-weight: 100;
+        padding-left: 80px;
+    }
+
+    /* Graduation Section */
+    .graduation-section .img-text {
+        width: 100%;
+        justify-content: space-evenly;
+        /* gap: 40px; */
+    }
+
+    .graduation-section h4 {
+        font-size: 14px;
+        font-weight: 100;
+        padding-left: 80px;
+    }
+
+    /* Skills */
+
+    .my-skills h3{
+        font-size: 25px;
+    }
+
+    
+
+    .skills h3 {
+        font-size: 20px;
+        position: relative;
+        bottom: 140px;
+        right: 10px;
+    }
+
+    .skill-box img {
+        width: 80px;
+    }
+
+    .skill-box h3,
+    .skill-box div {
+        font-size: 18px;
+    }
+
+    /* Project Box */
+
+    .project-text h3 {
+        font-size: 25px;
+    }
+
+    .project-box img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .project-box h4  {
+        color: #FDCA65;
+        font-weight: 100;
+    }
+    
+    .project-box h3 {
+        font-size: 18px;
+    }
+
+}
+/* Max-Width : 700px */
+@media (max-width: 700px) {
+
+    .hero-section {
+        margin-top: 80px;
+        justify-content: space-evenly;
+        height: 300px;
+    }
+
+    .hero-right img {
+        width: 320px;
+    }
+
+    .hero-left h3 {
+        font-size: 28px;
+    }
+    
+    .hero-left h1 {
+        font-size: 35px;
+    }
+    
+    .hero-left h4 {
+        font-size: 25px;
+    }
+    
+    #element {
+        font-size: 25px;
+    }
+
+    .about-me-content p {
+        padding-right: 0px;
+    }
+
+}
+
+/* Max-Width : 628px */
+@media (max-width: 628px) {
+
+    nav {
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    .content-section {
+        width: 80%;
+        height: 100vh;
+        background-color: #212123;
+        font-size: 25px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        padding-top: 20px;
+        right: 0px;
+        top: 0px;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in-out;
+        /* display: none; */
+    }
+
+    .close-menu {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 30px;
+    }
+
+    #check:checked ~ .content-section {
+        transform: translateX(0%);
+    }
+
+    .logo-section {
+        width: fit-content;
+    }
+
+    nav i:last-child {
+        display: flex;
+        font-size: 30px;
+    }
+
+    .skills-mobile {
+        display: flex;
+    }
+
+    .skill-box h3 {
+        font-size: 18px;
+    }
+
+    /* Project Box */
+
+    .project-box img {
+        width: 200px;
+        height: 120px;
+    }
+
+    .project-box h4  {
+        color: #FDCA65;
+        font-weight: 100;
+    }
+    
+    .project-box h3 {
+        font-size: 18px;
+    }
+
+}
+
+/* Max-Width : 580px */
+@media (max-width: 580px) {
+
+    .hero-section {
+        margin-top: 80px;
+        justify-content: space-evenly;
+        height: 300px;
+    }
+
+    .hero-right img {
+        width: 280px;
+    }
+
+    .hero-left h3 {
+        font-size: 20px;
+    }
+    
+    .hero-left h1 {
+        font-size: 30px;
+    }
+    
+    .hero-left h4 {
+        font-size: 21px;
+    }
+    
+    #element {
+        font-size: 21px;
+        
+    }
+
+    .about-me {
+        height: 1500px;
+    }
+
+    .work-box {
+        width: 350px;
+        height: 180px;
+    }
+    
+    .work-box-text h3 {
+        font-size: 25px;
+    }
+
+    .work-box-text p {
+        font-size: 15px;
+    }
+
+    /* Project Box */
+
+    .project-box img {
+        width: 160px;
+        height: 90px;
+    }
+
+    .project-box h4  {
+        font-size: 14px;
+        color: #FDCA65;
+        font-weight: 100;
+    }
+    
+    .project-box h3 {
+        font-size: 15px;
+    }
+}
+
+/* Max-Width : 480px */
+@media (max-width: 480px) {
+
+    .sidebar {
+        display: block;
+        transform: translateY(-100%);
+    }
+
+    .hero-section {
+        margin-top: 80px;
+        justify-content: space-evenly;
+        height: 260px;
+    }
+
+    .hero-right img {
+        width: 220px;
+    }
+
+    .hero-left h3 {
+        font-size: 18px;
+    }
+    
+    .hero-left h1 {
+        font-size: 28px;
+    }
+    
+    .hero-left h4 {
+        font-size: 18px;
+    }
+    
+    #element {
+        font-size: 21px;
+    }
+
+    .education {
+        padding-bottom: 20px;
+        height: fit-content;
+    }
+
+    .skill-box img {
+        width: 60px;
+    }
+
+    .skill-box h3,
+    .skill-box div {
+        font-size: 14px;
+    }
+
+     /* Project Box */
+
+     .project-box img {
+        width: 120px;
+        height: 70px;
+    }
+
+    .project-box h4  {
+        font-size: 10px;
+        color: #FDCA65;
+        font-weight: 100;
+    }
+    
+    .project-box h3 {
+        font-size: 12px;
+    }
+    
+}
+
+/* Max-Width : 430px */
+@media (max-width: 430px) {
+
+    .hero-section {
+        margin-top: 80px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 250px;
+        align-items: start;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-right {
+        display: none;
+        width: 220px;
+    }
+
+    .hero-right img {
+        width: 100%;
+    }
+
+    .hero-left h3 {
+        font-size: 25px;
+    }
+    
+    .hero-left h1 {
+        font-size: 35px;
+    }
+    
+    .hero-left h4 {
+        font-size: 25px;
+    }
+    
+    #element {
+        font-size: 25px;
+        
+    }
+
+    /* About Me */
+
+    .about-me {
+        height: 1180px;
+    }
+
+    .about-me {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about-me-content h3 {
+        font-size: 20px;
+    }
+
+    /* Work */
+
+    .work h3 {
+        font-size: 20px;
+    }
+
+    .work-boxes {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* border: 5px solid #fff; */
+    }
+
+    .work-box {
+        width: 340px;
+        height: 150px;
+        background: #212123;
+        border-radius: 25px;
+        padding: 0px 20px;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .work-box .fa-solid {
+        font-size: 30px;
+    }
+
+    .work-box img {
+        width: 40px;
+    }
+
+    .work-box-text h3 {
+        font-size: 20px;
+    }
+
+    .work-box-text p {
+        font-size: 14px;
+    }
+
+    /* Education */
+    .education {
+        padding: 20px 20px;
+        height: 620px;
+    }
+    
+    .education h3 {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .img-text img {
+        width: 30px;
+    }
+
+    .img-text h3 {
+        font-size: 16px;
+    }
+
+    .board-section h4 {
+        font-size: 12px;
+        font-weight: 100;
+        padding-left: 50px;
+    }
+
+    /* Graduation Section */
+    .img-text img {
+        width: 30px;
+    }
+
+    .img-text h3 {
+        font-size: 16px;
+    }
+
+    .graduation-section h4 {
+        font-size: 12px;
+        font-weight: 100;
+        padding-left: 50px;
+    }
+
+    .experience h4 {
+        font-size: 18px;
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+
+    /* Skills */
+    .my-skills {
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 15px;
+
+    }
+
+    .my-skills h3{
+        font-size: 20px;
+    }
+
+    .skill-box h3 {
+        font-size: 15px;
+    }
+
+    /* Project Box */
+
+    .project-text h3 {
+        font-size: 20px;
+    }
+
+    .project-box img {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .project-box h4  {
+        font-size: 10px;
+        color: #FDCA65;
+        font-weight: 100;
+    }
+    
+    .project-box h3 {
+        font-size: 12px;
+    }
+
+    /* Contact Us */
+    form input,form textarea {
+        margin: 5px 0px;
+    }
+
+    form button {
+        margin-top: 10px;
+    } 
+
+    .hire-resume button {
+        width: 50px;
+        font-size: 0.6rem;
+        border-radius: 2px;
+    }
+
+}
+
+/* Max-Width : 375px */
+@media (max-width: 376px) {
+
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    /* Skills */
+    .my-skills {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+    }
+
+    .my-skills h3{
+        font-size: 20px;
+    }
+
+    /* Project Box */
+
+    .my-projects {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .project-text h3 {
+        font-size: 20px;
+    }
+
+    .project-box img {
+        width: 240px;
+        height: 120px;
+        border-radius: 10px;
+    }
+
+    .project-box h4  {
+        font-size: 12px;
+        color: #FDCA65;
+        font-weight: 100;
+    }
+    
+    .project-box h3 {
+        font-size: 15px;
+    }
+}
+
+/* Max-Width : 320px */
+
+@media (max-width: 320px) {
+
+    .hero-section {
+        height: 200px;
+    }
+
+    .hero-left h3 {
+        font-size: 18px;
+    }
+    
+    .hero-left h1 {
+        font-size: 30px;
+    }
+    
+    .hero-left h4 {
+        font-size: 20px;
+    }
+
+    #element {
+        font-size: 20px;
+        color: #FDCA65;
+    }
+    
+    .about-me {
+        height: 1180px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about-me h3 {
+        font-size: 20px;
+    }
+
+    .about-me p {
+        font-size: 12px;
+    }
+
+    .work h3 {
+        font-size: 20px;
+    }
+
+    /* Project Box */
+
+    .my-projects {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .project-text h3 {
+        font-size: 20px;
+    }
+
+    .project-box img {
+        width: 150px;
+        height: 80px;
+        border-radius: 10px;
+    }
+
+    .project-box h4  {
+        font-size: 12px;
+        color: #FDCA65;
+        font-weight: 100;
+    }
+    
+    .project-box h3 {
+        font-size: 15px;
+    }
+
+    /* Contact Us */
+    .contact-us {
+        padding: 15px;
+    }
+
+    form input,form textarea {
+        margin: 5px 0px;
+        height: 50px;
+    }
+
+    form button {
+        margin-top: 10px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    } 
+
+}
+
+
+
+
