@@ -1,8 +1,14 @@
 import React from "react";
+import Instagram from "../assets/icons/instagram.png";
+import Twitter from "../assets/icons/twitter.png";
+import LinkedIn from "../assets/icons/linkedin.png";
+import Youtube from "../assets/icons/youtube.png";
+import LeetCode from "../assets/icons/leetcode.webp";
+import GeeksForGeeks from "../assets/icons/GeeksforGeeks.png";
 
 const Footer = () => {
   return (
-    <footer className="w-full p-0">
+    <footer className="w-full p-0 dark:bg-gray-900 dark:text-white">
       <div className="flex flex-row items-start justify-between p-5">
         <div className="flex flex-col gap-4">
           <h3 className="font-semibold text-lg">Menu</h3>
@@ -26,9 +32,23 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-4">
           <h3 className="font-semibold text-lg">Social Media</h3>
+          <div className="flex gap-2 w-fit items-center">
+            <a href="https://www.instagram.com/roneeey_09/">
+              <img src={Instagram} alt="" className="w-12 h-12" />
+            </a>
+            <a href="#">
+              <img src={Twitter} alt="" className="w-10 h-10" />
+            </a>
+            <a href="https://www.linkedin.com/in/ahmadraza09/">
+              <img src={Youtube} alt="" className="w-10 h-10" />
+            </a>
+            <a href="https://www.linkedin.com/in/ahmadraza09/">
+              <img src={LinkedIn} alt="" className="w-10 h-10" />
+            </a>
+          </div>
         </div>
       </div>
-      <div className="flex justify-between bg-slate-200 px-5 py-2">
+      <div className="flex justify-between bg-slate-200 px-5 py-2 dark:bg-[#DDDDDD] dark:text-black">
         <span>Copyright © 2024 - 2025. Ahmad Raza.</span>
         <span>
           <span>Data Privacy | Privacy Policy | Terms of service</span>
