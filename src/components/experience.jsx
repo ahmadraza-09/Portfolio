@@ -4,7 +4,7 @@ import RCHR from "../assets/icons/RCHR.webp";
 
 const Experience = () => {
   return (
-    <section className="px-10 mt-10">
+    <section className="sm:p-10 p-5 mt-10" id="experience">
       <h1 className="uppercase font-bold text-lg after:[''] dark:after:bg-white after:block after:w-full *: after:h-1 after:bg-black">
         Experience
       </h1>

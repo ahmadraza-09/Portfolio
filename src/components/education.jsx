@@ -6,7 +6,7 @@ import UNCODEMY from "../assets/icons/uncodemy.png";
 
 const Education = () => {
   return (
-    <section className="px-10 mt-10">
+    <section className="mt-10 sm:p-10 p-5" id="education">
       <h1 className="uppercase font-bold text-lg after:[''] dark:after:bg-white after:block after:w-full *: after:h-1 after:bg-black">
         Education
       </h1>
@@ -14,7 +14,7 @@ const Education = () => {
       <div className="pt-4 flex flex-col gap-8">
         <div className="flex gap-2">
           <div>
-            <img src={JAC} alt="" className="w-14 h-14" />
+            <img src={JAC} alt="" className="sm:w-14 sm:h-14 w-12 h-10" />
           </div>
           <div className="flex flex-col">
             <h2 className="font-semibold text-lg">10th — Secondary School</h2>
@@ -25,7 +25,7 @@ const Education = () => {
         </div>
         <div className="flex gap-2">
           <div>
-            <img src={JAC} alt="" className="w-14 h-14" />
+            <img src={JAC} alt="" className="sm:w-14 sm:h-14 w-12 h-10" />
           </div>
           <div className="flex flex-col">
             <h2 className="font-semibold text-lg">12th — Secondary School</h2>
@@ -36,7 +36,7 @@ const Education = () => {
         </div>
         <div className="flex gap-2">
           <div>
-            <img src={CCSU} alt="" className="w-14 h-14" />
+            <img src={CCSU} alt="" className="sm:w-14 sm:h-14 w-16 h-10" />
           </div>
           <div className="flex flex-col">
             <h2 className="font-semibold text-lg">
@@ -68,7 +68,7 @@ const Education = () => {
         </div>
         <div className="flex gap-2">
           <div>
-            <img src={AMITY} alt="" className="w-14 h-14" />
+            <img src={AMITY} alt="" className="sm:w-14 sm:h-14 w-10 h-10" />
           </div>
           <div className="flex flex-col">
             <h2 className="font-semibold text-lg">

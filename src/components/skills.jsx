@@ -27,15 +27,18 @@ const Skills = () => {
   ];
 
   return (
-    <section className="px-10 mt-10">
+    <section className="sm:p-10 p-5 mt-10" id="skills">
       <h1 className="uppercase font-bold text-lg after:[''] dark:after:bg-white after:block after:w-full *: after:h-1 after:bg-black">
         Skills
       </h1>
 
-      <div className="flex items-center text-center pt-10 gap-6 flex-wrap">
+      <div className="flex items-center justify-center text-center pt-10 gap-6 flex-wrap">
         {skillsData.map((skill, index) => (
-          <div key={index}>
-            <img src={skill.image} alt="" className="w-20" />
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center"
+          >
+            <img src={skill.image} alt="" className="sm:w-20 w-14" />
             <h3 className="font-semibold">{skill.name}</h3>
           </div>
         ))}
