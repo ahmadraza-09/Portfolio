@@ -103,7 +103,12 @@ const Navbar = () => {
                 Project
               </Link>
             </li>
-            <li className="cursor-pointer">Mini Projects</li>
+            <li
+              className="cursor-pointer"
+              onClick={() => navigate("/mini-projects")}
+            >
+              Mini Projects
+            </li>
             <li className="cursor-pointer">
               <Link to="contact" smooth={true} duration={0}>
                 Contact
