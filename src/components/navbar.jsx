@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import ThemeButton from "./themebutton";
-import { FiMenu, FiX } from "react-icons/fi"; // ✅ React icons
+import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -51,6 +54,12 @@ const Navbar = () => {
             Project
           </Link>
         </li>
+        <li
+          className="cursor-pointer"
+          onClick={() => navigate("/mini-projects")}
+        >
+          Mini Projects
+        </li>
         <li className="cursor-pointer">
           <Link to="contact" smooth={true} duration={0}>
             Contact
@@ -94,6 +103,7 @@ const Navbar = () => {
                 Project
               </Link>
             </li>
+            <li className="cursor-pointer">Mini Projects</li>
             <li className="cursor-pointer">
               <Link to="contact" smooth={true} duration={0}>
                 Contact
