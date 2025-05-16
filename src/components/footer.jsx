@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import Instagram from "../assets/icons/instagram.png";
 import Twitter from "../assets/icons/twitter.png";
 import LinkedIn from "../assets/icons/linkedin.png";
@@ -13,11 +14,31 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <h3 className="font-semibold text-lg">Menu</h3>
           <ul className="flex flex-col gap-2">
-            <li>Home</li>
-            <li>Education</li>
-            <li>Experience</li>
-            <li>Project</li>
-            <li>Contact</li>
+            <li className="cursor-pointer">
+              <Link to="home" smooth={true} duration={0}>
+                Home
+              </Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link to="education" smooth={true} duration={0}>
+                Education
+              </Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link to="experience" smooth={true} duration={0}>
+                Experience
+              </Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link to="project" smooth={true} duration={0}>
+                Project
+              </Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link to="contact" smooth={true} duration={0}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col gap-4">

@@ -34,7 +34,7 @@ const Experience = () => {
               <img src={RCHR} alt="" className="w-" />
             </div>
             <div className="flex flex-col">
-              <h2 className="font-semibold text-lg">Web Developer</h2>
+              <h2 className="font-semibold text-lg">Full Stack Developer</h2>
               <span>Sep-2024 — Feb-2025</span>
               <span>Company — Royal Collection Hotels & Resorts Pvt. Ltd.</span>
               <span>

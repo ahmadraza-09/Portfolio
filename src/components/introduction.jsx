@@ -18,7 +18,7 @@ const Introduction = () => {
         </button>
         <button className="bg-[#183B4E] text-white px-2 rounded font-medium cursor-pointer">
           <a
-            href="/ahmadrazaresume.pdf"
+            href="/Ahmad-Raza-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
