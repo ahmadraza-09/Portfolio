@@ -10,6 +10,7 @@ import Express from "../assets/icons/express-js.png";
 import Node from "../assets/icons/node-js.png";
 import MongoDB from "../assets/icons/mongo-db.png";
 import MySql from "../assets/icons/mysql.png";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const skillsData = [
@@ -26,6 +27,19 @@ const Skills = () => {
     { name: "MySql", image: MySql },
   ];
 
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.1,
+        duration: 0.4,
+        type: "spring",
+      },
+    }),
+  };
+
   return (
     <section className="sm:p-10 p-5 mt-10" id="skills">
       <h1 className="uppercase font-bold text-lg after:[''] dark:after:bg-white after:block after:w-full *: after:h-1 after:bg-black">
@@ -34,13 +48,18 @@ const Skills = () => {
 
       <div className="flex items-center justify-center text-center pt-10 gap-6 flex-wrap">
         {skillsData.map((skill, index) => (
-          <div
+          <motion.div
             key={index}
             className="flex flex-col items-center justify-center"
+            variants={itemVariants}
+            initial="hidden"
+            whileInView="visible"
+            custom={index}
+            viewport={{ once: true, amount: 0.4 }}
           >
-            <img src={skill.image} alt="" className="sm:w-20 w-14" />
+            <img src={skill.image} alt={skill.name} className="sm:w-20 w-14" />
             <h3 className="font-semibold">{skill.name}</h3>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

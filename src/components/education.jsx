@@ -3,6 +3,12 @@ import JAC from "../assets/icons/jac logo.png";
 import CCSU from "../assets/icons/ccsu logo.png";
 import AMITY from "../assets/icons/amity.png";
 import UNCODEMY from "../assets/icons/uncodemy.png";
+import { motion } from "framer-motion";
+
+const slideUpVariant = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const Education = () => {
   return (
@@ -12,7 +18,14 @@ const Education = () => {
       </h1>
 
       <div className="pt-4 flex flex-col gap-8">
-        <div className="flex gap-2">
+        <motion.div
+          className="flex gap-2"
+          variants={slideUpVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5 }}
+        >
           <div>
             <img src={JAC} alt="" className="sm:w-14 sm:h-14 w-12 h-10" />
           </div>
@@ -22,8 +35,16 @@ const Education = () => {
             <span>School — +2 RK High School, Haidar Nagar</span>
             <span>Marks — 81.20%</span>
           </div>
-        </div>
-        <div className="flex gap-2">
+        </motion.div>
+
+        <motion.div
+          className="flex gap-2"
+          variants={slideUpVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <div>
             <img src={JAC} alt="" className="sm:w-14 sm:h-14 w-12 h-10" />
           </div>
@@ -33,8 +54,16 @@ const Education = () => {
             <span>School — +2 RK High School, Haidar Nagar</span>
             <span>Marks — 71%</span>
           </div>
-        </div>
-        <div className="flex gap-2">
+        </motion.div>
+
+        <motion.div
+          className="flex gap-2"
+          variants={slideUpVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           <div>
             <img src={CCSU} alt="" className="sm:w-14 sm:h-14 w-16 h-10" />
           </div>
@@ -49,8 +78,16 @@ const Education = () => {
             </span>
             <span>Grade — 6.5 CGPA</span>
           </div>
-        </div>
-        <div className="flex gap-2">
+        </motion.div>
+
+        <motion.div
+          className="flex gap-2"
+          variants={slideUpVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
           <div>
             <img src={UNCODEMY} alt="" className="w-14 h-14" />
           </div>
@@ -65,8 +102,16 @@ const Education = () => {
               MongoDB, MySql.
             </span>
           </div>
-        </div>
-        <div className="flex gap-2">
+        </motion.div>
+
+        <motion.div
+          className="flex gap-2"
+          variants={slideUpVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+        >
           <div>
             <img src={AMITY} alt="" className="sm:w-14 sm:h-14 w-10 h-10" />
           </div>
@@ -76,9 +121,9 @@ const Education = () => {
             </h2>
             <span>2025 — 2027</span>
             <span>University — Amity University Online, Noida</span>
-            <span>Present — Persuing </span>
+            <span>Present — Persuing</span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

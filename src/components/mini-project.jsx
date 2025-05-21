@@ -15,7 +15,7 @@ const MiniProjects = () => {
 
   return (
     <section className="sm:p-10 p-5 min-h-screen">
-      <h1 className="text-center uppercase font-bold text-3xl text-black mb-10">
+      <h1 className="text-center uppercase font-bold text-3xl text-black mb-10 dark:text-white">
         Mini Projects
       </h1>
 
