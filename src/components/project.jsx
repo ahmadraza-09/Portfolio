@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import DAB from "../assets/images/DAB.png";
 import HotelWale from "../assets/images/hotelwale.png";
 
@@ -10,7 +11,14 @@ const Project = () => {
       </h1>
 
       <div className="md:flex md:items-center md:justify-around mt-10 gap-20 md:flex-row flex-col items-start ">
-        <div className="flex flex-col gap-6 md:w-[50%] w-full">
+        {/* Project 1 */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex flex-col gap-6 md:w-[50%] w-full"
+        >
           <h2 className="font-bold uppercase">HealthCare</h2>
           <a
             href="#"
@@ -34,32 +42,37 @@ const Project = () => {
             for both patients and healthcare providers.
           </p>
           <div className="flex gap-4 flex-wrap">
-            <span className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black">
-              HTML
-            </span>
-            <span className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black">
-              CSS
-            </span>
-            <span className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black">
-              JavaScript
-            </span>
-            <span className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black">
-              Express.Js
-            </span>
-            <span className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black">
-              Node.Js
-            </span>
-            <span className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black">
-              MySql
-            </span>
+            {[
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "Express.Js",
+              "Node.Js",
+              "MySql",
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
           <button className="dark:bg-white dark:text-black w-fit px-2 py-1 font-semibold rounded">
             <a href="#" target="_blank">
-              Live Preview <i class="fi fi-sr-share-square"></i>
+              Live Preview <i className="fi fi-sr-share-square"></i>
             </a>
           </button>
-        </div>
-        <div className="flex flex-col gap-6 md:w-[50%] w-full mt-20 sm:mt-0">
+        </motion.div>
+
+        {/* Project 2 */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="flex flex-col gap-6 md:w-[50%] w-full mt-20 sm:mt-0"
+        >
           <h2 className="font-bold uppercase">Hotel Wale</h2>
           <a
             href="https://hotelwale.com/"
@@ -86,28 +99,23 @@ const Project = () => {
             admins.
           </p>
           <div className="flex gap-4 flex-wrap">
-            <span className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black">
-              HTML
-            </span>
-            <span className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black">
-              CSS
-            </span>
-            <span className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black">
-              Tailwind CSS
-            </span>
-            <span className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black">
-              JavaScript
-            </span>
-            <span className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black">
-              React.Js
-            </span>
+            {["HTML", "CSS", "Tailwind CSS", "JavaScript", "React.Js"].map(
+              (tech) => (
+                <span
+                  key={tech}
+                  className="bg-slate-200 px-2 rounded py-1 font-medium dark:text-black"
+                >
+                  {tech}
+                </span>
+              )
+            )}
           </div>
           <button className="dark:bg-white dark:text-black w-fit px-2 py-1 font-semibold rounded">
             <a href="https://hotelwale.com/" target="_blank">
-              Live Preview <i class="fi fi-sr-share-square"></i>
+              Live Preview <i className="fi fi-sr-share-square"></i>
             </a>
           </button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
